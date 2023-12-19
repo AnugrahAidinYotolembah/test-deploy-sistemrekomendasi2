@@ -44,7 +44,7 @@ def main():
 
     # Menambahkan sidebar dengan foto, nama, dan nim
     st.sidebar.title("Profile")
-    st.sidebar.image("/Users/didiyotolembah19gmail.com/Documents/kuliah/TUGAS AKHIR/konversi/image/Anugrah Aidin Yotolembah_F55120093.jpg", use_column_width=True)
+    st.sidebar.image("image/Anugrah Aidin Yotolembah_F55120093.jpg", use_column_width=True)
     st.sidebar.title("Anugrah Aidin Yotolembah")
     st.sidebar.title("F55120093")
     st.sidebar.title("Universitas Tadulako")
