@@ -71,7 +71,7 @@ def main():
         recommendations = need_recommendation(need, data, cosine_sim)
 
         # Menampilkan header dengan warna dan style
-        st.markdown("<h2 style='color: #000000;'>Rekomendasi Pelatihan:</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 style='color: #FFFFFF;'>Rekomendasi Pelatihan:</h2>", unsafe_allow_html=True)
         st.markdown("---")
 
         # Menampilkan rekomendasi dalam bentuk tabel
