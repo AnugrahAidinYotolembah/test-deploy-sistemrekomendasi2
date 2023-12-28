@@ -46,6 +46,7 @@ def main():
     st.sidebar.title("Profile")
     st.sidebar.image("image/Anugrah Aidin Yotolembah_F55120093.jpg", use_column_width=True)
     st.sidebar.title("Anugrah Aidin Yotolembah")
+    st.sidebar.title("S1 Teknik Informatika")
     st.sidebar.title("F55120093")
     st.sidebar.title("Universitas Tadulako")
 
