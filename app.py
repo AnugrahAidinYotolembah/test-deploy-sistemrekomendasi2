@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import joblib
 
+
+
+
 def get_recommendations(need, cosine_sim, data):
     search_recommendations = len(data)
     idx = data.loc[(data['need'] == need)].index[0]
@@ -26,6 +29,8 @@ def need_recommendation(need, data, cosine_sim):
     return dict_from_df
 
 
+
+
 # Fungsi utama
 def main():
     st.set_page_config(page_title="Rekomendasi Produk Pelatihan", page_icon="📚", layout="wide", initial_sidebar_state="expanded", menu_items=None)
@@ -47,7 +52,6 @@ def main():
     st.sidebar.image("image/Anugrah Aidin Yotolembah_F55120093.jpg", use_column_width=True)
     st.sidebar.title("Anugrah Aidin Yotolembah")
     st.sidebar.title("F55120093")
-    st.sidebar.title("S1 Teknik Informatika")
     st.sidebar.title("Universitas Tadulako")
 
     # Judul halaman dengan warna dan style
@@ -56,13 +60,64 @@ def main():
         <h2 style='text-align: center; color: #FFFFFF;'>Implementasi Sistem Rekomendasi Penjualan produk Pelatihan Terbaik menggunakan algoritma Cosine Similarity<br>(studi kasus : PT MENARA INDONESIA)</h2>
         <hr style='border: 2px solid #B81D24;'>
         <br>
-        <h2 style='text-align: center; color: #FFFFFF;'>Rekomendasi Produk Pelatihan Terbaik</h2>
+        <h2 style='text-align: center; color: #FFFFFF;'>Katalok Penjualan Pelatihan</h2>
         <br>
         """,
         unsafe_allow_html=True
     )
 
+    training_data = [
+    "Keterampilan pemecahan masalah produksi",
+    "Kemampuan merencanakan, mengelola, dan mengukur proyek",
+    "Keterampilan pengembangan produk atau inovasi",
+    "Kreativitas dan keingintahuan",
+    "Kemampuan riset pasar dan analisis tren",
+    "Keterampilan pengawasan dan pemantauan",
+    "Kemampuan menyusun dan melaksanakan kebijakan keamanan",
+    "Keterampilan komunikasi tertulis dan lisan yang baik",
+    "Kreativitas dalam penyusunan pesan dan kampanye komunikasi",
+    "Kemampuan perencanaan produksi",
+    "Pengetahuan tentang hukum perusahaan",
+    "Kemampuan troubleshoot dan mendukung pengguna TI",
+    "Keahlian dalam kepatuhan hukum",
+    "Kreativitas dalam pengembangan kampanye pemasaran",
+    "Keterampilan analisis hukum",
+    "Keterampilan administrasi umum (pengetikan, penyimpanan data, dll.)",
+    "Kemampuan penelitian ilmiah",
+    "Keahlian dalam pengumpulan dan analisis data",
+    "Keterampilan interpersonal dan komunikasi yang baik",
+    "Keterampilan manajemen proyek TI",
+    "Kemampuan penyelesaian sengketa",
+    "Keterampilan komunikasi yang baik",
+    "Pemahaman tentang prosedur operasional standar",
+    "Keahlian dalam penyelesaian konflik dan mediasi",
+    "Pemahaman tentang proses produksi dan optimisasi operasional",
+    "Kemampuan rekruitmen dan seleksi karyawan",
+    "Keterampilan pemasaran dan promosi",
+    "Keterampilan analitis yang kuat",
+    "Pemahaman yang kuat tentang sistem dan infrastruktur TI",
+    "Pengetahuan tentang kesehatan dan keselamatan kerja",
+    "Kemampuan menangani risiko proyek",
+    "Keterampilan manajemen proyek",
+    "Kemampuan penyelesaian sengketa",
+    "Keahlian dalam analisis risiko dan manajemen keuangan",
+    "Pemahaman tentang siklus hidup proyek",
+    "Keterampilan manajemen rantai pasokan"
+    ]
     
+    data = pd.DataFrame(training_data, columns=['katalog produk pelatihan'])
+    st.table(pd.DataFrame(data))
+
+    st.markdown(
+        """
+        <hr style='border: 2px solid #B81D24;'>
+        <br>
+        <h2 style='text-align: center; color: #FFFFFF;'>Rekomendasi Produk Pelatihan Terbaik</h2>
+        """,
+        unsafe_allow_html=True
+        )
+
+
     # Pilihan list up-down untuk kebutuhan pelatihan
     options = ["Production Control With Kanban","ProResolve Production Genius","TroubleSolver TechCraft",
                "InnovateEase Production Solutions", "MasterMind ProblemSolve Suite","Project Management & Assertive User Handling",
@@ -171,6 +226,9 @@ def main():
 
         # Menampilkan rekomendasi dalam bentuk tabel
         st.table(pd.DataFrame(recommendations))
+
+        
+
         
         
 if __name__ == '__main__':
