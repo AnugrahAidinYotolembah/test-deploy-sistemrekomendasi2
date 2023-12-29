@@ -60,7 +60,7 @@ def main():
         <h2 style='text-align: center; color: #FFFFFF;'>Implementasi Sistem Rekomendasi Penjualan produk Pelatihan Terbaik menggunakan algoritma Cosine Similarity<br>(studi kasus : PT MENARA INDONESIA)</h2>
         <hr style='border: 2px solid #B81D24;'>
         <br>
-        <h2 style='text-align: center; color: #FFFFFF;'>Katalok Penjualan Pelatihan</h2>
+        <h2 style='text-align: center; color: #FFFFFF;'>Katalog Penjualan Pelatihan</h2>
         <br>
         """,
         unsafe_allow_html=True
