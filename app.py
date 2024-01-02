@@ -196,7 +196,7 @@ def main():
             <style>
             table {
                 color: #FFFFFF;
-                background-color: #1E4156;  /* Warna latar belakang tabel */
+                background-color: #182c25;  /* Warna latar belakang tabel */
             }
             </style>
             """,
