@@ -41,19 +41,12 @@ def main():
         background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
         background-size: cover;
         }
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
     </style>
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-    hide_st_style = """
-    <style>
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-    </style>
-    """
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-
-    
 
     # Menambahkan sidebar dengan foto, nama, dan nim
     st.sidebar.title("Profile")
