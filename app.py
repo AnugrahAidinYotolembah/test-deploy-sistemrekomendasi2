@@ -59,7 +59,7 @@ def main():
     st.markdown(
         """
         <h2 style='text-align: center; color: #FFFFFF;'>Implementasi Sistem Rekomendasi Penjualan produk Pelatihan Terbaik menggunakan algoritma Cosine Similarity<br>(studi kasus : PT MENARA INDONESIA)</h2>
-        <hr style='border: 2px solid #0b0000;'>
+        <hr style='border: 2px solid #780909;'>
         <br>
         <h2 style='text-align: center; color: #FFFFFF;'>Katalog Penjualan Pelatihan</h2>
         <br>
@@ -78,7 +78,7 @@ def main():
     
     st.markdown(
         """
-        <hr style='border: 2px solid #0b0000;'>
+        <hr style='border: 2px solid #780909;'>
         <br>
         <h2 style='text-align: center; color: #FFFFFF;'>Rekomendasi Produk Pelatihan Terbaik</h2>
         """,
