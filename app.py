@@ -67,47 +67,14 @@ def main():
         unsafe_allow_html=True
     )
 
-    training_data = [
-    "Keterampilan pemecahan masalah produksi",
-    "Kemampuan merencanakan, mengelola, dan mengukur proyek",
-    "Keterampilan pengembangan produk atau inovasi",
-    "Kreativitas dan keingintahuan",
-    "Kemampuan riset pasar dan analisis tren",
-    "Keterampilan pengawasan dan pemantauan",
-    "Kemampuan menyusun dan melaksanakan kebijakan keamanan",
-    "Keterampilan komunikasi tertulis dan lisan yang baik",
-    "Kreativitas dalam penyusunan pesan dan kampanye komunikasi",
-    "Kemampuan perencanaan produksi",
-    "Pengetahuan tentang hukum perusahaan",
-    "Kemampuan troubleshoot dan mendukung pengguna TI",
-    "Keahlian dalam kepatuhan hukum",
-    "Kreativitas dalam pengembangan kampanye pemasaran",
-    "Keterampilan analisis hukum",
-    "Keterampilan administrasi umum (pengetikan, penyimpanan data, dll.)",
-    "Kemampuan penelitian ilmiah",
-    "Keahlian dalam pengumpulan dan analisis data",
-    "Keterampilan interpersonal dan komunikasi yang baik",
-    "Keterampilan manajemen proyek TI",
-    "Kemampuan penyelesaian sengketa",
-    "Keterampilan komunikasi yang baik",
-    "Pemahaman tentang prosedur operasional standar",
-    "Keahlian dalam penyelesaian konflik dan mediasi",
-    "Pemahaman tentang proses produksi dan optimisasi operasional",
-    "Kemampuan rekruitmen dan seleksi karyawan",
-    "Keterampilan pemasaran dan promosi",
-    "Keterampilan analitis yang kuat",
-    "Pemahaman yang kuat tentang sistem dan infrastruktur TI",
-    "Pengetahuan tentang kesehatan dan keselamatan kerja",
-    "Kemampuan menangani risiko proyek",
-    "Keterampilan manajemen proyek",
-    "Kemampuan penyelesaian sengketa",
-    "Keahlian dalam analisis risiko dan manajemen keuangan",
-    "Pemahaman tentang siklus hidup proyek",
-    "Keterampilan manajemen rantai pasokan"
-    ]
-    
-    data = pd.DataFrame(training_data, columns=['katalog produk pelatihan'])
-    st.table(pd.DataFrame(data))
+    image_path1 = "image/gambar_1.png"  # Ganti dengan path gambar yang sesuai
+    st.image(image_path1, use_column_width=True)
+    image_path2 = "image/gambar_2.png"  # Ganti dengan path gambar yang sesuai
+    st.image(image_path2, use_column_width=True)
+    image_path3 = "image/gambar_3.png"  # Ganti dengan path gambar yang sesuai
+    st.image(image_path3, use_column_width=True)
+    image_path4 = "image/gambar_4.png"  # Ganti dengan path gambar yang sesuai
+    st.image(image_path4, use_column_width=True)
 
     st.markdown(
         """
