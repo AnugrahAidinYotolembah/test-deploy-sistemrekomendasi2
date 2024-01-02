@@ -42,7 +42,6 @@ def main():
         background-size: cover;
         }
     footer {visibility: hidden;}
-    header {visibility: hidden;}
     </style>
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
