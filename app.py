@@ -58,10 +58,10 @@ def main():
     # Judul halaman dengan warna dan style
     st.markdown(
         """
-        <h2 style='text-align: center; color: #000000;'>Implementasi Sistem Rekomendasi Penjualan produk Pelatihan Terbaik menggunakan algoritma Cosine Similarity<br>(studi kasus : PT MENARA INDONESIA)</h2>
+        <h2 style='text-align: center; color: #FFFFFF;'>Implementasi Sistem Rekomendasi Penjualan produk Pelatihan Terbaik menggunakan algoritma Cosine Similarity<br>(studi kasus : PT MENARA INDONESIA)</h2>
         <hr style='border: 2px solid #B81D24;'>
         <br>
-        <h2 style='text-align: center; color: #000000;'>Katalog Penjualan Pelatihan</h2>
+        <h2 style='text-align: center; color: #FFFFFF;'>Katalog Penjualan Pelatihan</h2>
         <br>
         """,
         unsafe_allow_html=True
@@ -80,7 +80,7 @@ def main():
         """
         <hr style='border: 2px solid #B81D24;'>
         <br>
-        <h2 style='text-align: center; color: #000000;'>Rekomendasi Produk Pelatihan Terbaik</h2>
+        <h2 style='text-align: center; color: #FFFFFF;'>Rekomendasi Produk Pelatihan Terbaik</h2>
         """,
         unsafe_allow_html=True
         )
@@ -189,7 +189,7 @@ def main():
         recommendations = need_recommendation(need, data, cosine_sim)
 
         # Menampilkan header dengan warna dan style
-        st.markdown("<h2 style='color: #000000;'>Rekomendasi Pelatihan:</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 style='color: #FFFFFF;'>Rekomendasi Pelatihan:</h2>", unsafe_allow_html=True)
         st.markdown("---")
 
         # Menampilkan rekomendasi dalam bentuk tabel
