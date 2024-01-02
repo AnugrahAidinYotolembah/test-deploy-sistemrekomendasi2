@@ -67,9 +67,6 @@ def main():
         unsafe_allow_html=True
     )
 
-    image_path1 = ["image/gambar_1.png", "image/gambar_2.png", "image/gambar_3.png", "image/gambar_4.png"]  # Ganti dengan path gambar yang sesuai
-    st.image(image_path1, use_column_width=True)
-
     image_path1 = "image/gambar_1.png"  # Ganti dengan path gambar yang sesuai
     st.image(image_path1, use_column_width=True)
     image_path2 = "image/gambar_2.png"  # Ganti dengan path gambar yang sesuai
