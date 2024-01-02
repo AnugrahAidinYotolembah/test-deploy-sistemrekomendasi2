@@ -191,6 +191,17 @@ def main():
         # Menampilkan header dengan warna dan style
         st.markdown("<h2 style='color: #FFFFFF;'>Rekomendasi Pelatihan:</h2>", unsafe_allow_html=True)
         st.markdown("---")
+        st.markdown(
+            """
+            <style>
+            table {
+                color: #FFFFFF;
+                background-color: #1E4156;  /* Warna latar belakang tabel */
+            }
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
 
         # Menampilkan rekomendasi dalam bentuk tabel
         st.table(pd.DataFrame(recommendations))
