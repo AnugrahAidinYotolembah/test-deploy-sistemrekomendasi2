@@ -206,6 +206,5 @@ def main():
         # Menampilkan rekomendasi dalam bentuk tabel
         st.table(pd.DataFrame(recommendations))
 
-                
 if _name_ == '_main_':
     main()
