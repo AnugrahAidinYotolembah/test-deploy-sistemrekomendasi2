@@ -5,6 +5,8 @@ import joblib
 
 
 
+
+
 def get_recommendations(need, cosine_sim, data):
     search_recommendations = len(data)
     idx = data.loc[(data['need'] == need)].index[0]
@@ -27,6 +29,11 @@ def need_recommendation(need, data, cosine_sim):
     recommendations_sorted = recommendations_sorted.drop(['score'], axis=1)
     dict_from_df = recommendations_sorted.to_dict(orient='list')
     return dict_from_df
+
+
+
+
+
 
 
 
@@ -206,5 +213,11 @@ def main():
         # Menampilkan rekomendasi dalam bentuk tabel
         st.table(pd.DataFrame(recommendations))
 
-if _name_ == '_main_':
+        
+
+
+        
+
+        
+if __name__ == '__main__':
     main()
