@@ -1,8 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-from streamlit_folium import folium_static
-import folium
+
 
 
 
@@ -214,23 +213,7 @@ def main():
         # Menampilkan rekomendasi dalam bentuk tabel
         st.table(pd.DataFrame(recommendations))
 
-        # Visualisasi peta Indonesia dengan folium
-        st.markdown("---")
-        st.markdown("<h2 style='text-align: center; color: #FFFFFF;'>daerah yang dikunjungi</h2>", unsafe_allow_html=True)
         
-
-        # Contoh peta statis menggunakan folium
-        m = folium.Map(location=[-2.5489, 118.0149], zoom_start=5)  # Koordinat tengah Indonesia
-
-        # Menambahkan marker pada peta (contoh)
-        folium.Marker([-6.2088, 106.8456], popup='Jakarta').add_to(m)
-        folium.Marker([-7.2504, 112.7688], popup='Surabaya').add_to(m)
-        folium.Marker([ -6.595038, 106.816635], popup='Bogor').add_to(m)
-
-        
-
-        # Menampilkan peta
-        folium_static(m, width=940, height=500)
 
 
         
