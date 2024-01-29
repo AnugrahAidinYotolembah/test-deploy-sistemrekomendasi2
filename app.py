@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-from streamlit_folium import folium_static
+from streamlit-folium import folium_static
 import folium
 
 
